@@ -51,8 +51,8 @@ p {
 }
 
 h2 {
-  margin: 30px 0 15px 0;
-  color: #888;
+  margin: 30px 0 20px 0;
+  color: #666;
   font-size: 24px;
   font-weight: 300;
   line-height: 1em;
@@ -63,8 +63,11 @@ h2 {
 
 h3 {
   margin: 15px 0 10px 0;
+  color: #888;
   font-family: Monaco, "Lucida Console", monospace;
+  font-weight: normal;
   font-size: 16px;
+  line-height: 20px;
 }
 
 .left-align {
@@ -96,6 +99,6 @@ h3 {
     text-align: center;
   }
 
-.disclaimer {
+.top-space {
   margin-top: 30px;
 }
