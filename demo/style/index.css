@@ -22,23 +22,26 @@ p {
 
 h1 {
   margin: 30px 0 10px 0;
-  font-size: 32px;
+  font-size: 50px;
+  font-weight: 300;
   line-height: 1em;
+  letter-spacing: -2px;
 }
+
 .subtitle {
   margin: 10px 0 30px 0;
   color: #666;
 }
 
 h2 {
-  margin: 30px 0;
+  margin: 45px 0 15px 0;
   color: #888;
   font-size: 24px;
   font-weight: 300;
   line-height: 1em;
 }
   h2 a {
-    color: #333;
+    color: #222;
   }
 
 h3 {
@@ -61,8 +64,8 @@ h3 {
 .global-counter {
   float: right;
   color: #666;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 600;
   line-height: 1em;
 }
 
