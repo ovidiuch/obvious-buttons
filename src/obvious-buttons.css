@@ -1,0 +1,428 @@
+/**
+ * Obvious Buttons 0.1
+ * https://github.com/skidding/obvious-buttons
+ *
+ * (c) 2014+ Ovidiu Cherecheș
+ * http://skidding.mit-license.org
+ */
+.button {
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 5px;
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 18px;
+  line-height: 37px;
+  background: #fafafa;
+  color: #222222;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 0.2s;
+  -webkit-transition-timing-function: linear;
+  -moz-transition-property: background-color;
+  -moz-transition-duration: 0.2s;
+  -moz-transition-timing-function: linear;
+  -ms-transition-property: background-color;
+  -ms-transition-duration: 0.2s;
+  -ms-transition-timing-function: linear;
+  -o-transition-property: background-color;
+  -o-transition-duration: 0.2s;
+  -o-transition-timing-function: linear;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+.button:hover,
+.button:focus {
+  background: #e6e6e6;
+  color: #222222;
+}
+.button i {
+  line-height: 37px;
+}
+.button:active,
+.button:active i {
+  line-height: 40px;
+}
+.button.button-primary {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #0088cc;
+  color: #fafafa;
+}
+.button.button-primary:hover,
+.button.button-primary:focus {
+  background: #006da3;
+  color: #fafafa;
+}
+.button.button-info {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #49afcd;
+  color: #fafafa;
+}
+.button.button-info:hover,
+.button.button-info:focus {
+  background: #339bba;
+  color: #fafafa;
+}
+.button.button-success {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #5bb75b;
+  color: #fafafa;
+}
+.button.button-success:hover,
+.button.button-success:focus {
+  background: #47a247;
+  color: #fafafa;
+}
+.button.button-warning {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #faa732;
+  color: #fafafa;
+}
+.button.button-warning:hover,
+.button.button-warning:focus {
+  background: #f9960a;
+  color: #fafafa;
+}
+.button.button-danger {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #da4f49;
+  color: #fafafa;
+}
+.button.button-danger:hover,
+.button.button-danger:focus {
+  background: #d0312a;
+  color: #fafafa;
+}
+.button.button-inverse {
+  -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
+  background: #363636;
+  color: #fafafa;
+}
+.button.button-inverse:hover,
+.button.button-inverse:focus {
+  background: #222222;
+  color: #fafafa;
+}
+.button span {
+  pointer-events: none;
+}
+.button:hover {
+  text-decoration: none;
+}
+.button:focus {
+  text-decoration: none;
+  outline: none;
+}
+.button:active {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.button-small {
+  height: 30px;
+  padding: 0 10px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+  line-height: 28px;
+  background: #fafafa;
+  color: #222222;
+}
+.button-small:hover,
+.button-small:focus {
+  background: #e6e6e6;
+  color: #222222;
+}
+.button-small i {
+  line-height: 28px;
+}
+.button-small:active,
+.button-small:active i {
+  line-height: 30px;
+}
+.button-small.button-primary {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #0088cc;
+  color: #fafafa;
+}
+.button-small.button-primary:hover,
+.button-small.button-primary:focus {
+  background: #006da3;
+  color: #fafafa;
+}
+.button-small.button-info {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #49afcd;
+  color: #fafafa;
+}
+.button-small.button-info:hover,
+.button-small.button-info:focus {
+  background: #339bba;
+  color: #fafafa;
+}
+.button-small.button-success {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #5bb75b;
+  color: #fafafa;
+}
+.button-small.button-success:hover,
+.button-small.button-success:focus {
+  background: #47a247;
+  color: #fafafa;
+}
+.button-small.button-warning {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #faa732;
+  color: #fafafa;
+}
+.button-small.button-warning:hover,
+.button-small.button-warning:focus {
+  background: #f9960a;
+  color: #fafafa;
+}
+.button-small.button-danger {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #da4f49;
+  color: #fafafa;
+}
+.button-small.button-danger:hover,
+.button-small.button-danger:focus {
+  background: #d0312a;
+  color: #fafafa;
+}
+.button-small.button-inverse {
+  -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
+  background: #363636;
+  color: #fafafa;
+}
+.button-small.button-inverse:hover,
+.button-small.button-inverse:focus {
+  background: #222222;
+  color: #fafafa;
+}
+.button-large {
+  height: 50px;
+  padding: 0 18px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 22px;
+  line-height: 46px;
+  background: #fafafa;
+  color: #222222;
+}
+.button-large:hover,
+.button-large:focus {
+  background: #e6e6e6;
+  color: #222222;
+}
+.button-large i {
+  line-height: 46px;
+}
+.button-large:active,
+.button-large:active i {
+  line-height: 50px;
+}
+.button-large.button-primary {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #0088cc;
+  color: #fafafa;
+}
+.button-large.button-primary:hover,
+.button-large.button-primary:focus {
+  background: #006da3;
+  color: #fafafa;
+}
+.button-large.button-info {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #49afcd;
+  color: #fafafa;
+}
+.button-large.button-info:hover,
+.button-large.button-info:focus {
+  background: #339bba;
+  color: #fafafa;
+}
+.button-large.button-success {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #5bb75b;
+  color: #fafafa;
+}
+.button-large.button-success:hover,
+.button-large.button-success:focus {
+  background: #47a247;
+  color: #fafafa;
+}
+.button-large.button-warning {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #faa732;
+  color: #fafafa;
+}
+.button-large.button-warning:hover,
+.button-large.button-warning:focus {
+  background: #f9960a;
+  color: #fafafa;
+}
+.button-large.button-danger {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #da4f49;
+  color: #fafafa;
+}
+.button-large.button-danger:hover,
+.button-large.button-danger:focus {
+  background: #d0312a;
+  color: #fafafa;
+}
+.button-large.button-inverse {
+  -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
+  background: #363636;
+  color: #fafafa;
+}
+.button-large.button-inverse:hover,
+.button-large.button-inverse:focus {
+  background: #222222;
+  color: #fafafa;
+}
+.button-xlarge {
+  height: 60px;
+  padding: 0 22px;
+  border-radius: 7px;
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.15);
+  font-size: 26px;
+  line-height: 55px;
+  background: #fafafa;
+  color: #222222;
+}
+.button-xlarge:hover,
+.button-xlarge:focus {
+  background: #e6e6e6;
+  color: #222222;
+}
+.button-xlarge i {
+  line-height: 55px;
+}
+.button-xlarge:active,
+.button-xlarge:active i {
+  line-height: 60px;
+}
+.button-xlarge.button-primary {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #0088cc;
+  color: #fafafa;
+}
+.button-xlarge.button-primary:hover,
+.button-xlarge.button-primary:focus {
+  background: #006da3;
+  color: #fafafa;
+}
+.button-xlarge.button-info {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #49afcd;
+  color: #fafafa;
+}
+.button-xlarge.button-info:hover,
+.button-xlarge.button-info:focus {
+  background: #339bba;
+  color: #fafafa;
+}
+.button-xlarge.button-success {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #5bb75b;
+  color: #fafafa;
+}
+.button-xlarge.button-success:hover,
+.button-xlarge.button-success:focus {
+  background: #47a247;
+  color: #fafafa;
+}
+.button-xlarge.button-warning {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #faa732;
+  color: #fafafa;
+}
+.button-xlarge.button-warning:hover,
+.button-xlarge.button-warning:focus {
+  background: #f9960a;
+  color: #fafafa;
+}
+.button-xlarge.button-danger {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #da4f49;
+  color: #fafafa;
+}
+.button-xlarge.button-danger:hover,
+.button-xlarge.button-danger:focus {
+  background: #d0312a;
+  color: #fafafa;
+}
+.button-xlarge.button-inverse {
+  -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
+  background: #363636;
+  color: #fafafa;
+}
+.button-xlarge.button-inverse:hover,
+.button-xlarge.button-inverse:focus {
+  background: #222222;
+  color: #fafafa;
+}
+.button-inline {
+  display: inline-block;
+  vertical-align: middle;
+}
