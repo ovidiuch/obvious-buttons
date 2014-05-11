@@ -29,6 +29,7 @@
 @inverse-background-color: #363636;
 @inverse-text-color: #fafafa;
 
+
 // Cross-browser helpers
 
 .boxShadow (@statement) {
@@ -74,7 +75,6 @@
   .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.15));
   font-size: @font-size;
   line-height: @height - @depth;
-  .buttonColor(@default-background-color, @default-text-color);
 
   i {
     line-height: @height - @depth;
@@ -82,30 +82,8 @@
   &:active, &:active i {
     line-height: @height;
   }
-
-  &.button-primary {
+  &.button-primary, &.button-info, &.button-success, &.button-warning, &.button-danger, &.button-inverse {
     .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@primary-background-color, @primary-text-color);
-  }
-  &.button-info {
-    .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@info-background-color, @info-text-color);
-  }
-  &.button-success {
-    .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@success-background-color, @success-text-color);
-  }
-  &.button-warning {
-    .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@warning-background-color, @warning-text-color);
-  }
-  &.button-danger {
-    .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@danger-background-color, @danger-text-color);
-  }
-  &.button-inverse {
-    .boxShadow(inset 0 -@depth 0 0 rgba(0, 0, 0, 0.2));
-    .buttonColor(@inverse-background-color, @inverse-text-color);
   }
 }
 
@@ -117,6 +95,26 @@
   border: none;
   .buttonSize(40px, 3px, 18px);
   .transition(background-color, 0.2s);
+  .buttonColor(@default-background-color, @default-text-color);
+
+  &.button-primary {
+    .buttonColor(@primary-background-color, @primary-text-color);
+  }
+  &.button-info {
+    .buttonColor(@info-background-color, @info-text-color);
+  }
+  &.button-success {
+    .buttonColor(@success-background-color, @success-text-color);
+  }
+  &.button-warning {
+    .buttonColor(@warning-background-color, @warning-text-color);
+  }
+  &.button-danger {
+    .buttonColor(@danger-background-color, @danger-text-color);
+  }
+  &.button-inverse {
+    .buttonColor(@inverse-background-color, @inverse-text-color);
+  }
 
   span {
     // We need this extra span because there's a WebKit bug that sometimes
