@@ -5,7 +5,7 @@
  * (c) 2014+ Ovidiu Cherecheș
  * http://skidding.mit-license.org
  */
-.button {
+.btn {
   display: block;
   text-align: center;
   cursor: pointer;
@@ -36,98 +36,98 @@
   background: #fafafa;
   color: #222222;
 }
-.button i {
+.btn i {
   line-height: 37px;
 }
-.button:active,
-.button:active i {
+.btn:active,
+.btn:active i {
   line-height: 40px;
 }
-.button.button-primary,
-.button.button-info,
-.button.button-success,
-.button.button-warning,
-.button.button-danger,
-.button.button-inverse {
+.btn.btn-primary,
+.btn.btn-info,
+.btn.btn-success,
+.btn.btn-warning,
+.btn.btn-danger,
+.btn.btn-inverse {
   -webkit-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -3px 0 0 rgba(0, 0, 0, 0.2);
 }
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
   background: #e6e6e6;
   color: #222222;
 }
-.button.button-primary {
+.btn.btn-primary {
   background: #0088cc;
   color: #fafafa;
 }
-.button.button-primary:hover,
-.button.button-primary:focus {
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
   background: #006da3;
   color: #fafafa;
 }
-.button.button-info {
+.btn.btn-info {
   background: #49afcd;
   color: #fafafa;
 }
-.button.button-info:hover,
-.button.button-info:focus {
+.btn.btn-info:hover,
+.btn.btn-info:focus {
   background: #339bba;
   color: #fafafa;
 }
-.button.button-success {
+.btn.btn-success {
   background: #5bb75b;
   color: #fafafa;
 }
-.button.button-success:hover,
-.button.button-success:focus {
+.btn.btn-success:hover,
+.btn.btn-success:focus {
   background: #47a247;
   color: #fafafa;
 }
-.button.button-warning {
+.btn.btn-warning {
   background: #faa732;
   color: #fafafa;
 }
-.button.button-warning:hover,
-.button.button-warning:focus {
+.btn.btn-warning:hover,
+.btn.btn-warning:focus {
   background: #f9960a;
   color: #fafafa;
 }
-.button.button-danger {
+.btn.btn-danger {
   background: #da4f49;
   color: #fafafa;
 }
-.button.button-danger:hover,
-.button.button-danger:focus {
+.btn.btn-danger:hover,
+.btn.btn-danger:focus {
   background: #d0312a;
   color: #fafafa;
 }
-.button.button-inverse {
+.btn.btn-inverse {
   background: #363636;
   color: #fafafa;
 }
-.button.button-inverse:hover,
-.button.button-inverse:focus {
+.btn.btn-inverse:hover,
+.btn.btn-inverse:focus {
   background: #222222;
   color: #fafafa;
 }
-.button span {
+.btn span {
   pointer-events: none;
 }
-.button:hover {
+.btn:hover {
   text-decoration: none;
 }
-.button:focus {
+.btn:focus {
   text-decoration: none;
   outline: none;
 }
-.button:active {
+.btn:active {
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
-.button-small {
+.btn-small {
   height: 30px;
   padding: 0 10px;
   border-radius: 4px;
@@ -137,24 +137,24 @@
   font-size: 14px;
   line-height: 28px;
 }
-.button-small i {
+.btn-small i {
   line-height: 28px;
 }
-.button-small:active,
-.button-small:active i {
+.btn-small:active,
+.btn-small:active i {
   line-height: 30px;
 }
-.button-small.button-primary,
-.button-small.button-info,
-.button-small.button-success,
-.button-small.button-warning,
-.button-small.button-danger,
-.button-small.button-inverse {
+.btn-small.btn-primary,
+.btn-small.btn-info,
+.btn-small.btn-success,
+.btn-small.btn-warning,
+.btn-small.btn-danger,
+.btn-small.btn-inverse {
   -webkit-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -2px 0 0 rgba(0, 0, 0, 0.2);
 }
-.button-large {
+.btn-large {
   height: 50px;
   padding: 0 18px;
   border-radius: 6px;
@@ -164,24 +164,24 @@
   font-size: 22px;
   line-height: 46px;
 }
-.button-large i {
+.btn-large i {
   line-height: 46px;
 }
-.button-large:active,
-.button-large:active i {
+.btn-large:active,
+.btn-large:active i {
   line-height: 50px;
 }
-.button-large.button-primary,
-.button-large.button-info,
-.button-large.button-success,
-.button-large.button-warning,
-.button-large.button-danger,
-.button-large.button-inverse {
+.btn-large.btn-primary,
+.btn-large.btn-info,
+.btn-large.btn-success,
+.btn-large.btn-warning,
+.btn-large.btn-danger,
+.btn-large.btn-inverse {
   -webkit-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -4px 0 0 rgba(0, 0, 0, 0.2);
 }
-.button-xlarge {
+.btn-xlarge {
   height: 60px;
   padding: 0 22px;
   border-radius: 7px;
@@ -191,24 +191,24 @@
   font-size: 26px;
   line-height: 55px;
 }
-.button-xlarge i {
+.btn-xlarge i {
   line-height: 55px;
 }
-.button-xlarge:active,
-.button-xlarge:active i {
+.btn-xlarge:active,
+.btn-xlarge:active i {
   line-height: 60px;
 }
-.button-xlarge.button-primary,
-.button-xlarge.button-info,
-.button-xlarge.button-success,
-.button-xlarge.button-warning,
-.button-xlarge.button-danger,
-.button-xlarge.button-inverse {
+.btn-xlarge.btn-primary,
+.btn-xlarge.btn-info,
+.btn-xlarge.btn-success,
+.btn-xlarge.btn-warning,
+.btn-xlarge.btn-danger,
+.btn-xlarge.btn-inverse {
   -webkit-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
   box-shadow: inset 0 -5px 0 0 rgba(0, 0, 0, 0.2);
 }
-.button-inline {
+.btn-inline {
   display: inline-block;
   vertical-align: middle;
 }
